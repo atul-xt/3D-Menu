@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    caret-color: transparent;
+}
+
+body{
+    perspective: 500px;
+    overflow-x: hidden;
+}
+
+.mouseEffect{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    box-shadow: 2px 5px 15px black ;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.navElements {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    height: 80%;
+    width: 18%;
+    transform: translate(0, -50%);
+    transition: all ease-in-out .5s;
+    /* background-color: yellow; */
+}
+
+.opt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opt i {
+    font-size: 2vw;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.ele {
+    margin-top: 40px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ele a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+}
+
+.ele a:hover {
+    color: black;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to right top, #f04d4d, #f362ab, #c291f2, #72b9ff, #48d5ff);
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
+}
+
+.navBar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navBar i {
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    margin: 40px 0;
+    line-height: 3vw;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.header p {
+    font-size: 1.1vw;
+    color: rgb(103, 103, 103);
+    font-weight: 600;
+}
+
+.elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.card {
+    width: 19%;
+    height: 23vw;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pic {
+    height: 17vw;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:nth-child(1) .pic {
+    background-image: url(https://images.unsplash.com/photo-1616435577207-ca90abc6b732?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.card:nth-child(2) .pic {
+    background-image: url(https://images.unsplash.com/photo-1513432001033-4a7b14b6d039?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.card:nth-child(3) .pic {
+    background-image: url(https://images.unsplash.com/photo-1487139975590-b4f1dce9b035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3dlciUyMHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.card:nth-child(4) .pic {
+    background-image: url(https://images.unsplash.com/photo-1566561626092-0cc0e2b2b4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.content {
+    padding: 10px;
+}
+
+.content span {
+    font-size: 1vw;
+    font-weight: 600;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.content span i {
+    margin-left: 5px;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+.content h4 {
+    margin-top: 5px;
+}
